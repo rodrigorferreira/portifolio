@@ -1,0 +1,70 @@
+footer {
+  background-color: #333;
+  color: #ecf0f1;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-icons {
+    margin-bottom: px;
+
+    a {
+      color: #ecf0f1;
+      margin: 0 10px;
+      font-size: 35px; // Aumentando o tamanho dos ícones
+      transition: color 0.3s;
+
+      &:hover {
+        color: #3498db;
+      }
+
+      i {
+        display: inline-block;
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+// Responsividade
+@media (max-width: 768px) {
+  footer {
+    font-size: 12px;
+
+    .social-icons {
+      a {
+        margin: 0 8px;
+        font-size: 28px; // Ajustando o tamanho dos ícones para telas menores
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 15px 0;
+
+    .social-icons {
+      a {
+        margin: 0 5px;
+        font-size: 24px; // Ajustando o tamanho dos ícones para telas menores
+      }
+    }
+  }
+}
